@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: hsl(186, 47%, 79%);
+  font-family: "Space Mono";
+}
+.spli {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+article {
+  padding: 25px;
+  border-radius: 20px;
+  background-color: white;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20px;
+  padding: 10px;
+  background-color: hsl(189, 47%, 97%);
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.box > p {
+  font-size: 18px;
+  font-weight: 900;
+}
+.para {
+  color: hsl(186, 19%, 37%);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.persent {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-gap: 10px;
+  grid-auto-rows: 45px;
+  margin-bottom: 20px;
+}
+.persent > div {
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: hsl(189, 47%, 97%);
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 5px;
+}
+footer {
+  padding: 20px;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+}
+.tip {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#customTip {
+  font-weight: 700;
+  color: hsl(180, 3%, 46%);
+  background-color: hsl(189, 47%, 97%);
+  text-align: center;
+}
+.total {
+  font-size: 30px;
+  padding-bottom: 25px;
+  color: hsl(172, 67%, 45%);
+  font-weight: 800;
+}
+.total-para {
+  padding-top: 25px;
+}
+.tip-para {
+  color: white;
+}
+.person {
+  font-size: 13px;
+  color: hsl(185, 41%, 84%);
+}
+button {
+  height: 50px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: hsl(172, 67%, 45%);
+  border: 0px;
+  color: hsl(183, 100%, 15%);
+}
+#bill {
+  height: 100%;
+  border: 0px;
+  border-radius: none;
+  font-size: 24px;
+  font-weight: 800;
+  background-color: hsl(189, 47%, 97%);
+  font-size: 17px;
+  text-align: end;
+  padding-bottom: 5px;
+  margin: 0px;
+  color: hsl(183, 100%, 15%);
+  box-shadow: none;
+}
+#people {
+  height: 100%;
+  text-align: end;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: hsl(189, 47%, 97%);
+  border-radius: none;
+  border: 0px;
+  box-sizing: 0px;
+  color: hsl(183, 100%, 15%);
+}
+
+.active {
+  background-color: hsl(172, 67%, 45%) !important;
+  color: hsl(183, 100%, 15%) !important;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+#totalPerPerson{
+  width: fit-content;
+}
+.tip{
+  /* width: 50px; */
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    padding: 0px;
+    margin: 0px;
+  }
+  article {
+    display: flex;
+    width: 120%;
+    margin: 0px;
+    padding: 30px 20px 30px 20px;
+  }
+
+  .go {
+    display: flex;
+
+    margin-left: 20px;
+  }
+
+  footer {
+    width: 130%;
+    margin-left: 25px;
+  }
+  .tip {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .persent {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+  }
+}
